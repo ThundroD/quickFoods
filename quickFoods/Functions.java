@@ -57,7 +57,7 @@ public class Functions {
     	if(cities.contains(customerCity)) {
     		//try catch to read the driver text file and create invoice file
     		try {
-    			File driverText = new File("drivers.txt");
+    			File driverText = new File("drivers-info.txt");
     			input = new Scanner(driverText);
     			
     			//while there are more drivers into array 
@@ -241,7 +241,7 @@ public class Functions {
     	
     	try {
     		//create new file. If the file exists append the file data
-    		BufferedWriter driversText = new BufferedWriter (new FileWriter("drivers.txt", true));
+    		BufferedWriter driversText = new BufferedWriter (new FileWriter("drivers-info.txt", true));
     		driversText.close();
     	
     		//add 1 to the drivers orders that is taking the order on invoice
@@ -253,7 +253,7 @@ public class Functions {
     		String newChosenDriver = chosenDriver[0] + ", " + chosenDriver[1] + ", " + chosenDriver[2];
     		
     		ArrayList<String> driverArrayList = new ArrayList<>();
-    		File driverTextToRead = new File("drivers.txt");
+    		File driverTextToRead = new File("drivers-info.txt");
     		Scanner driverTextReader = new Scanner(driverTextToRead);
     		
     		//while the file has a next line add the line into ArrayList
@@ -278,7 +278,7 @@ public class Functions {
     			newDriverArray[i] = driverArrayList.get(i);
     		}
     		
-    		BufferedWriter newDrivers = new BufferedWriter ( new FileWriter("drivers.txt"));
+    		BufferedWriter newDrivers = new BufferedWriter ( new FileWriter("drivers-info.txt"));
     		
     		//for the length of the array write the items of the array into the file
     		for(int j = 0; j < newDriverArray.length; j++) {
