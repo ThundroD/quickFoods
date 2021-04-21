@@ -91,7 +91,8 @@ public class Functions {
     					//driver becomes the driver with the lowest number of orders
     					driver = customerDriver.get(i);
     				}
-        		
+				
+        			//create string array from driver. Create variable driverName from the [0] of that array
     				String [] selectedDriverArray = driver.split(", ");
     				driverName = selectedDriverArray[0];
     				
