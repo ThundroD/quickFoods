@@ -1,3 +1,4 @@
 # quickFoods
 Run it on Docker - https://hub.docker.com/repository/docker/thundrod/capstone2
+
 This is a Java program that takes order requests from customers. First customer details are taken in. Next the customer chooses which restaurant they'd like to order from. Once the customer chooses a restaurant the menu is displayed allowing the customer to choose their items. The customer is then prompted to give any special instructions they may have.  A driver is then selected based which driver has the least amount of deliveries in the customer's area. After the program creates an invoice for the customer. The invoice shows customer details, their order, restaurant info, and which driver will be delivering their order. The program creates or updates a customer list based alphabetically, creates or updates a list of customers based on location, and updates the driver text file adding an extra order to the driver taking the delivery.
